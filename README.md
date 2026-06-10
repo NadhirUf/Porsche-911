@@ -6,7 +6,7 @@ Website company profile Porsche 911 yang dibuat sebagai project belajar HTML & C
 
 - Nama : Inisial R
 - Status: Mahasiswa Informatika Semester 2
-- Tanggal: Juni 2025
+- Tanggal: Juni 2026
 
 ## Teknologi yang digunakan
 
