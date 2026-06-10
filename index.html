@@ -144,6 +144,52 @@
         color: white;
         text-shadow: 2px 2px 8px black;
       }
+
+      /* ==== FOOTER ==== */
+      footer {
+        margin-top: 60px;
+        border-top: 1px solid #4db8ff;
+        padding-top: 40px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h4 {
+        color: #4db8ff;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+      }
+
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-col ul li a {
+        color: #7aa8cc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer-col ul li a:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        color: #7aa8cc;
+        border-top: 1px solid #1a3a6e;
+        padding-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -325,6 +371,33 @@
     <hr />
 
     <!-- ==== FOOTER ====-->
-    <p id="contact">&copy; 2024 Porsche AG</p>
+    <footer id="contact">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>PORSCHE</h4>
+          <p>The 911. An icon. A legend. Since 1963</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>MODELS</h4>
+          <ul>
+            <li><a href="#models">911 Carrera</a></li>
+            <li><a href="#models">911 GT3</a></li>
+            <li><a href="#models">911 Turbo S</a></li>
+            <li><a href="#models">911 S/T</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2024 Porsche AG. All rights reserved.</p>
+    </footer>
   </body>
 </html>
