@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Porsche 911 - Official</title>
+    <style>
+      /* ==== GLOBAL ==== */
+      body {
+        background-color: #060d24;
+        color: white;
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      /* ==== TYPOGRAPHY ====*/
+      h1 {
+        color: #4db8ff;
+        letter-spacing: 10px;
+      }
+
+      h2 {
+        color: #4db8ff;
+        letter-spacing: 5px;
+      }
+
+      h3 {
+        color: #a8d4ff;
+        border-bottom: 1px solid #4db8ff;
+        padding-bottom: 5px;
+      }
+
+      img {
+        width: 300px;
+        border: 2px solid #4db8ff;
+      }
+
+      p {
+        color: #7aa8cc;
+      }
+
+      hr {
+        border-color: #4db8ff;
+      }
+
+      /* ==== MODELS GRID ====*/
+      .models-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+      }
+
+      .car-card {
+        border: 1px solid #1a3a6e;
+        padding: 20px;
+        background-color: #0d1a3a;
+        display: flex;
+        flex-direction: column;
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .car-card:hover {
+        transform: translateY(-8px);
+        border-color: #4db8ff;
+      }
+
+      .car-card a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .car-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #4db8ff;
+      }
+
+      .car-card h3 {
+        height: 60px;
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+
+      /* ==== NAVBAR ====*/
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        padding: 20px 0;
+        border-bottom: 1px solid #4db8ff;
+        margin-bottom: 40px;
+      }
+
+      nav a {
+        color: #4db8ff;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 14px;
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        transform: translateY(-3px);
+        color: white;
+      }
+
+      /* ==== HERO SECTION ==== */
+      .hero {
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+      .hero img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .hero-text {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+      }
+
+      .hero-text h1 {
+        font-size: 60px;
+        margin: 0;
+        color: #4db8ff;
+        text-shadow: 2px 2px 15px black;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: white;
+        text-shadow: 2px 2px 8px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==== NAVBAR ==== -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#models">Models</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ==== HERO SECTION ==== -->
+    <div class="hero">
+      <img src="porsche.jpg" alt="Porsche 911" />
+      <div class="hero-text">
+        <h1 id="home">PORSCHE</h1>
+        <p>The 911. An icon. A legend.</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ==== MODELS GRID ==== -->
+    <h2 id="models">Our Models</h2>
+    <div class="models-grid">
+      <!-- KARTU MOBIL -->
+      <div class="car-card">
+        <a href="carrera.html">
+          <h3>911 Carrera</h3>
+          <img src="Carrera_911.jpg" alt="Porsche 911 Carrera" width="176" />
+          <p>The icon that started it all.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-t.html">
+          <h3>911 Carrera T</h3>
+          <img src="carrera_t.jpg" alt="Porsche 911 Carrera T" width="176" />
+          <p>Lightweight. Pure. Focused.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-s.html">
+          <h3>911 Carrera S</h3>
+          <img src="carrera_s.jpg" alt="Porsche 911 Carrera S" width="176" />
+          <p>More Power. More Passion.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-gts.html">
+          <h3>911 Carrera GTS</h3>
+          <img
+            src="carrera_GTS.jpg"
+            alt="Porsche 911 Carrera GTS"
+            width="176"
+          />
+          <p>The most powerful Carrera. Maximum perfomance.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-4-gts.html">
+          <h3>911 Carrera 4 GTS</h3>
+          <img
+            src="carrera_4_gts.jpg"
+            alt="Porsche 911 Carrera 4 GTS"
+            width="176"
+          />
+          <p>All-wheel drive meets GTS perfomance.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-cabriolet.html">
+          <h3>911 Carrera Cabriolet</h3>
+          <img
+            src="cabriolet.jpg"
+            alt="Porsche 911 Carrera Cabriolet"
+            width="176"
+          />
+          <p>Open-air driving. Timeless freedom.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-t-cabriolet.html">
+          <h3>911 Carrera T Cabriolet</h3>
+          <img
+            src="carrera_t_cabriolet.jpg"
+            alt="Porsche 911 Carrera T Cabriolet"
+            width="176"
+          />
+          <p>Lightweight focus, open to the sky. "T" for Touring.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-gts-cabriolet.html">
+          <h3>911 Carrera GTS Cabriolet</h3>
+          <img
+            src="carrera_gts_cabriolet.jpg"
+            alt="Porsche 911 Carrera GTS Cabriolet"
+            width="176"
+          />
+          <p>GTS power. Wind in your hair. T-Hybrid technology.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="carrera-4-gts-cabriolet.html">
+          <h3>911 Carrera 4 GTS Cabriolet</h3>
+          <img
+            src="carrera_4_gts_cabriolet.jpg"
+            alt="Porsche 911 Carrera 4 GTS Cabriolet"
+            width="176"
+          />
+          <p>All-wheel drive. Open top. Pure Thrill.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-GT3.html">
+          <h3>911 GT3</h3>
+          <img src="911_GT3.jpg" alt="Porsche 911 GT3" width="176" />
+          <p>Born on the racetrack. Extreme. From every perspective.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-GT3-touring.html">
+          <h3>911 GT3 with Touring Package</h3>
+          <img
+            src="911_gt3_touring.jpg"
+            alt="Porsche 911 GT3 Touring Package"
+            width="176"
+          />
+          <p>Racetrack soul. Everyday elegance.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-GT3-RS.html">
+          <h3>911 GT3 RS</h3>
+          <img src="911_GT3_RS.jpg" alt="Porsche 911 GT3 RS" width="176" />
+          <p>The most Extreme 911. Track-only mentality.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-turbo-s.html">
+          <h3>911 Turbo S</h3>
+          <img src="911_turbo_s.jpg" alt="Porsche 911 Turbo S" width="176" />
+          <p>The pinnacle of perfomance. Quintessentially Turbo.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-GT3-90-jahre.html">
+          <h3>911 GT3 90 Jahre F. A.</h3>
+          <img
+            src="911_GT3_90.jpg"
+            alt="Porsche 911 GT3 90 Jahre F. A."
+            width="176"
+          />
+          <p>A tribute to the legend. Limited edition.</p>
+        </a>
+      </div>
+
+      <div class="car-card">
+        <a href="911-ST.html">
+          <h3>911 S/T</h3>
+          <img src="911-ST.jpg" alt="Porsche 911 S/T" width="176" />
+          <p>The lightweight 60th anniversary special edition of the 992</p>
+        </a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ==== FOOTER ====-->
+    <p id="contact">&copy; 2024 Porsche AG</p>
+  </body>
+</html>
